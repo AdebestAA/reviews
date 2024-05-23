@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-color: lightblue;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    gap: 5rem;
+
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+.horizontal-line {
+    background-color: #0061f1;
+    width: 12rem;
+    height: 5px;
+    margin-left: 2.5rem;
+}
+
+.review-container {
+    border-radius: 30px;
+    background-color: white;
+    max-width: 35vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 0px 0px 10px 1px grey;
+}
+
+.review-container img {
+    border-radius: 50%;
+    box-shadow: 15px -5px 1px -5px #0061f1;
+}
+
+.review-container figure {
+    position: relative;
+}
+
+.review-container figure span {
+    position: absolute;
+    left: 0%;
+    top: 30px;
+    background-color: #0061f1;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+
+    color: white;
+    font-size: 3rem;
+    border-radius: 50%;
+
+}
+
+/* name and post of user */
+
+.review-container .name-of-user {
+    font-size: 0.9rem;
+    letter-spacing: 3.5px;
+    text-transform: uppercase;
+}
+
+.review-container .name-and-post {
+    margin-block: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.review-container .job {
+    letter-spacing: 2px;
+    color: #0061f1;
+    padding-top: 5px;
+}
+
+
+
+/* reveiw of user */
+
+.review-container .review-of-user {
+    text-align: center;
+}
+
+.review-container .review-of-user .control-btn {
+    padding: 5px;
+}
+
+.control-btn .back-btn,
+.control-btn .front-btn {
+    margin-inline: 5px;
+    padding-inline: 5px;
+    padding-block: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.review-container .suprise-btn {
+    padding: 5px;
+    border-radius: 4px;
+    color: white;
+    background-color: #0061f1;
+    border: none;
+    cursor: pointer;
+}
+
+.review-container .suprise-btn:focus {
+    outline: 2px solid rgb(0, 26, 255);
+}
+
+.control-btn .back-btn:focus,
+.control-btn .front-btn:focus {
+    outline: 2px solid rgb(0, 110, 255);
+}
+
+
+@media screen and (max-width: 1100px) {
+
+    .review-container {
+        min-width: 60vw;
+
+    }
+}
